@@ -1,16 +1,15 @@
-#ifndef SHAPES_H
-#define SHAPES_H
-
+#ifndef AREA_H
+#define AREA_H
 
 int tri(int x, int y);
 int squ(int x, int y);
 int rec(int x, int y);
 
-typedef int (*ShapeFunc)(int, int);
+typedef int (*AreaFunc)(int, int);
 
 typedef struct {
     const char* name;
-    ShapeFunc func;
-} Shape;
+    AreaFunc func;
+} Area;
 
-#endif
+#endif 
